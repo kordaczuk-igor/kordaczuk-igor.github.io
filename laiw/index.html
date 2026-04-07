@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Igor Kordaczuk = GitHub Portfolio</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header class="profile-header">
+      <a href="/" class="home-link">
+        <img
+          src="../assets/Profilowe1.jpg"
+          alt="Igor Kordaczuk"
+          class="avatar"
+        />
+
+        <div class="text">
+          <h1>Igor Kordaczuk</h1>
+          <p>My GitHub Projects</p>
+        </div>
+      </a>
+    </header>
+
+    <main>
+      <h2>AcademyPoint</h2>
+      <p>
+        Custom <b>extension for MedusaJS</b> developed for <b>szkolaorlow.pl</b>
+        to streamline the enrollment and payment management process for
+        educational courses.
+      </p>
+
+      <p class="github-link icons github-item">
+        <a
+          href="https://github.com/PyszneMaselko/medusajs-2.0-for-railway-boilerplate-VliO"
+          target="_blank"
+          class="github-item"
+        >
+          <img src="../assets/Github.png" alt="GitHub" />
+          <span class="text">AcademyPoint Repository</span>
+        </a>
+      </p>
+
+      <section class="project-desc">
+        <section>
+          <h3>Overview</h3>
+          <p>
+            Academy Point is a backend system built on top of
+            <b>MedusaJS</b> designed to automate and simplify the process of
+            managing course enrollments for students.
+          </p>
+          <p>
+            Previously, the client handled registrations via email and phone,
+            and stored enrollment data in Excel spreadsheets. Processing these
+            records required significant manual work and made it difficult to
+            track customer history, manage recurring services, and collect
+            payments efficiently.
+          </p>
+          <p>The goal of this project was to create a system that:</p>
+          <ul>
+            <li>centralizes customer and order data</li>
+            <li>automates payment collection</li>
+            <li>simplifies order management</li>
+            <li>enables tracking of student enrollments and services</li>
+          </ul>
+          <p>
+            The system allows staff to create and manage orders for families
+            enrolling children in courses or tutoring sessions, while customers
+            receive email notifications and can pay for their orders online.
+          </p>
+
+          <img src="../assets/AcademyPoint-2026-03-27_21-03.png" />
+        </section>
+
+        <section>
+          <h3>Business Context</h3>
+          <p>The client runs an educational institution offering:</p>
+          <ul>
+            <li>group courses</li>
+            <li>tutoring sessions</li>
+            <li>recurring educational services</li>
+          </ul>
+          <p>
+            Each family may enroll multiple children into different courses. The
+            system supports managing families, students, and course enrollments
+            while maintaining full visibility into orders, payments, and service
+            fulfillment.
+          </p>
+        </section>
+
+        <section>
+          <h3>Key Features</h3>
+
+          <h4>1. Automated Payment Collection</h4>
+          <p>
+            The platform includes a payment automation system integrated with:
+          </p>
+          <ul>
+            <li>Stripe</li>
+            <li>BLIK payments</li>
+          </ul>
+          <p>
+            Customers receive an email containing their order and a payment
+            link. They can complete the payment independently without staff
+            intervention.
+          </p>
+          <p><b>Key capabilities:</b></p>
+          <ul>
+            <li>automated payment requests</li>
+            <li>payment status tracking</li>
+            <li>integration with Medusa order lifecycle</li>
+            <li>support for online payment methods commonly used in Poland</li>
+          </ul>
+
+          <video class="preview" controls>
+            <source src="../assets/PaymentSystem.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <h4>2. Family Management</h4>
+          <p>
+            A custom family management module was implemented to reflect the
+            real-world structure of the client’s customers.
+          </p>
+          <ul>
+            <li>grouping multiple students under a single family</li>
+            <li>tracking order history for each family</li>
+            <li>creating new orders for existing families</li>
+            <li>scheduling future orders</li>
+            <li>automatic renewal of recurring services</li>
+          </ul>
+
+          <p style="margin-top: 30px">
+            Create family student and parent profiles to simplify order
+            management and billing.
+          </p>
+          <video class="preview" controls>
+            <source src="../assets/FamilyCreate.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <p style="margin-top: 30px">Edit family members</p>
+          <video class="preview" controls>
+            <source src="../assets/FamilyEdit.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <p style="margin-top: 30px">Schedule upcoming billing for a family</p>
+          <video class="preview" controls>
+            <source src="../assets/AddDraftOrder.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <p style="margin-top: 30px">Draft order renewal</p>
+          <video class="preview" controls>
+            <source src="../assets/DraftOrderTrigger.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <h4>3. Course and Student Management</h4>
+          <p>The system introduces domain logic for managing:</p>
+          <ul>
+            <li>students</li>
+            <li>course groups</li>
+            <li>enrollments</li>
+          </ul>
+          <p>
+            Each student can be assigned to specific course groups, allowing
+            administrators to track whether the services delivered match the
+            ordered and paid services.
+          </p>
+          <ul>
+            <li>verification of enrollment vs purchased services</li>
+            <li>monitoring group capacity</li>
+            <li>managing student-course assignments</li>
+            <li>
+              ensuring operational consistency between orders and course
+              participation
+            </li>
+          </ul>
+        </section>
+
+        <p style="margin-top: 30px">
+          AcademyPoint allows a quick overview of which student attends which
+          class groups, enabling the owner to efficiently verify whether course
+          billing aligns with the lists of participants assigned to each group.
+        </p>
+        <video class="preview" controls>
+          <source src="../assets/Attendance.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <section>
+          <h3>System Architecture</h3>
+          <p>
+            The solution is implemented as a custom extension to
+            <b>MedusaJS</b>, leveraging its modular architecture to introduce
+            domain-specific functionality.
+          </p>
+          <p><b>Core components include:</b></p>
+          <ul>
+            <li>custom modules extending Medusa services</li>
+            <li>payment integrations</li>
+            <li>order lifecycle automation</li>
+            <li>domain entities for families, students, and course groups</li>
+          </ul>
+          <p>
+            The backend acts as the operational hub for managing educational
+            services and customer payments.
+          </p>
+        </section>
+
+        <section>
+          <h3>Benefits</h3>
+          <ul>
+            <li>
+              reduced manual work previously required for Excel-based workflows
+            </li>
+            <li>centralized management of families, students, and orders</li>
+            <li>automated payment collection</li>
+            <li>improved visibility into customer history</li>
+            <li>reduced administrative overhead</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Future Improvements</h3>
+          <ul>
+            <li>customer self-service portal</li>
+            <li>automated reminders for unpaid orders</li>
+            <li>attendance tracking for course sessions</li>
+            <li>reporting and analytics for enrollment trends</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Client</h3>
+          <p>
+            Developed for: <b>szkolaorlow.pl</b><br />
+            Educational services provider specializing in courses and tutoring
+            for students.
+          </p>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
