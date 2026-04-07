@@ -17,6 +17,16 @@ main {
   margin: auto;
 }
 
+.home-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+}
+
 .projects {
   display: grid;
   grid-template-columns: 1fr;
