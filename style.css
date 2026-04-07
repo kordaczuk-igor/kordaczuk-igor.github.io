@@ -21,9 +21,17 @@ main {
   display: flex;
   align-items: center;
   text-decoration: none;
+  color: inherit;    
   justify-content: center;
   gap: 20px;
   text-align: left;
+}
+
+.home-link:visited,
+.home-link:hover,
+.home-link:active {
+  color: inherit;
+  text-decoration: none;
 }
 
 .projects {
