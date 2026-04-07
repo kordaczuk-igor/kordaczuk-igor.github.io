@@ -33,7 +33,7 @@ main {
   transition: 0.2s;
 }
 
-.project img {
+img {
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -59,4 +59,82 @@ a {
 .icons img {
   height: 30px;
   width: auto;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.text p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+
+.github-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;           
+  text-decoration: none;
+  color: inherit;
+  gap: 8px;
+}
+
+.github-link {
+  text-align: center;
+}
+
+.github-item img {
+  width: 20px;
+  height: 20px;
+}
+
+.github-item:hover {
+  opacity: 0.8;
+}
+
+.project-desc {
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.project-desc h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.project-desc h3 {
+  margin-top: 30px;
+  color: #222;
+}
+
+.project-desc h4 {
+  margin-top: 20px;
+}
+
+.project-desc ul {
+  padding-left: 20px;
+}
+
+.preview {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
