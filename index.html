@@ -1,71 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
-<head>
-<meta charset="UTF-8">
-<title>Igor Kordaczuk = GitHub Portfolio</title>
-<link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Igor Kordaczuk = GitHub Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <header class="profile-header">
+      <a href="/" class="home-link">
+        <img
+          src="./assets/Profilowe1.jpg"
+          alt="Igor Kordaczuk"
+          class="avatar"
+        />
 
-<header class="profile-header">
-  <a href="/" class="home-link">
-    <img src="./assets/Profilowe1.jpg" alt="Igor Kordaczuk" class="avatar">
+        <div class="text">
+          <h1>Igor Kordaczuk</h1>
+          <p>My GitHub Projects</p>
+        </div>
+      </a>
+    </header>
 
-    <div class="text">
-      <h1>Igor Kordaczuk</h1>
-      <p>My GitHub Projects</p>
-    </div>
-  </a>
-</header>
+    <main>
+      <div class="projects">
+        <h1>MedusaJS - Ecommerce extensions</h1>
+        <div class="icons">
+          <img src="./assets/logo-medusajs.png" alt="MedusaJS_logo" />
+          <img src="./assets/Typescript_logo_2020.svg.png" alt="TS_logo" />
+          <img src="./assets/React-icon.svg.png" alt="React_logo" />
+          <img src="./assets/Railway_Logo.svg" alt="Railway_logo" />
+          <img src="./assets/Postgresql_elephant.png" alt="Postgresql_logo" />
+        </div>
 
-<main>
+        <a class="project" href="academy-point">
+          <h2>AcademyPoint – Simplifying the client billing process</h2>
+          <p>
+            Custom <b>extension for MedusaJS</b> developed for
+            <b>szkolaorlow.pl</b>
+            to streamline the enrollment and payment management process for
+            educational courses.
+          </p>
 
-<div class="projects">
+          <div class="image-slider">
+            <img
+              src="./assets/AcademyPointPaymentScreen.png"
+              alt="Payment screen"
+            />
+          </div>
+        </a>
 
-<h1>MedusaJS - Ecommerce extensions</h1>
-<div class="icons">
-    <img src="./assets/logo-medusajs.png" alt="MedusaJS_logo">
-    <img src="./assets/Typescript_logo_2020.svg.png" alt="TS_logo">
-    <img src="./assets/React-icon.svg.png" alt="React_logo">
-    <img src="./assets/Railway_Logo.svg" alt="Railway_logo">
-    <img src="./assets/Postgresql_elephant.png" alt="Postgresql_logo">
-</div>
+        <a class="project" href="laiw">
+          <h2>
+            LAiW - OpenAI API used to simplify the process of creating legal
+            documents
+          </h2>
+          <p>
+            Custom <b>legal-tech platform</b> developed for scalable generation
+            and distribution of legal documents, initiated by
+            <b>baitlaw.com</b>.
+          </p>
+          <div class="image-slider">
+            <img src="./assets/LAiWScreen.png" alt="LAiW ScreenShot" />
+          </div>
+        </a>
 
+        <a class="project">
+          <div class="badge">Work in progress</div>
+          <h2>Eazyboosting - Reversed Marketplace extension</h2>
+          <p>
+            Eazyboosting is a startup in the niche of rank boosting for computer
+            games. I am involved in developing an
+            <b>extension that implements the Reversed Marketplace logic</b>,
+            which will be the core of the startup’s operations.
+          </p>
+          <div class="image-slider">
+            <img src="./assets/EazyboostingScreen.png" alt="LAiW ScreenShot" />
+          </div>
+        </a>
 
-<a class="project" href="academy-point">
-  <h2>AcademyPoint</h2>
-  <p>
-    Custom <b>extension for MedusaJS</b> developed for <b>szkolaorlow.pl</b>
-    to streamline the enrollment and payment management process for educational courses.
-  </p>
+        <h1>Academy Projects</h1>
+        <div class="icons">
+          <img
+            src="./assets/Java_programming_language_logo.svg.png"
+            style="height: 60px !important"
+            alt="Java_logo"
+          />
+          <img src="./assets/Python-logo-notext.svg.png" alt="JPython_logo" />
+        </div>
 
-  <div class="image-slider">
-    <img src="./assets/AcademyPointPaymentScreen.png" alt="Payment screen">
-  </div>
-</a>
-
-<a class="project" href="project2.html">
-<img src="project2.jpg" alt="Thumbnail Projektu 2">
-<h2>Projekt 2</h2>
-<p>Opis projektu.</p>
-</a>
-
-<h1>Academy Projects</h1>
-<div class="icons">
-    <img src="./assets/Java_programming_language_logo.svg.png" style="height: 60px !important;" alt="Java_logo">
-    <img src="./assets/Python-logo-notext.svg.png" alt="JPython_logo">
-</div>
-
-<a class="project" href="project3.html">
-<img src="project3.jpg" alt="Thumbnail Projektu 3">
-<h2>Projekt 3</h2>
-<p>Opis projektu.</p>
-</a>
-
-</div>
-
-</main>
-
-</body>
+        <a class="project" href="cap-man">
+          <h2>Cap Man</h2>
+          <p>
+            Cap-man is a simple academic project developed as part of university
+            coursework, focused on learning proper multithreading in
+            <b>Java</b>.
+          </p>
+          <div class="image-slider">
+            <img src="./assets/CapManScreen.png" alt="Payment screen" />
+          </div>
+        </a>
+      </div>
+    </main>
+  </body>
 </html>

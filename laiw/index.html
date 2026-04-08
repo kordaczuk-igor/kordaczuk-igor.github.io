@@ -23,21 +23,16 @@
     </header>
 
     <main>
-      <h2>AcademyPoint</h2>
+      <h2>LAiW</h2>
       <p>
-        Custom <b>extension for MedusaJS</b> developed for <b>szkolaorlow.pl</b>
-        to streamline the enrollment and payment management process for
-        educational courses.
+        Custom <b>legal-tech platform</b> developed for scalable generation and
+        distribution of legal documents, initiated by <b>baitlaw.com</b>.
       </p>
 
       <p class="github-link icons github-item">
-        <a
-          href="https://github.com/PyszneMaselko/medusajs-2.0-for-railway-boilerplate-VliO"
-          target="_blank"
-          class="github-item"
-        >
+        <a href="https://github.com/PyszneMaselko/medusajs-2.0-for-railway-boilerplate" target="_blank" class="github-item">
           <img src="../assets/Github.png" alt="GitHub" />
-          <span class="text">AcademyPoint Repository</span>
+          <span class="text">LAiW Repository</span>
         </a>
       </p>
 
@@ -45,200 +40,246 @@
         <section>
           <h3>Overview</h3>
           <p>
-            Academy Point is a backend system built on top of
-            <b>MedusaJS</b> designed to automate and simplify the process of
-            managing course enrollments for students.
+            Laiw is a backend-driven system designed to automate the creation,
+            customization, and sale of legal agreements for individual clients.
+            The platform enables users to purchase legally reviewed, AI-assisted
+            contracts at a significantly lower cost compared to traditional
+            legal services.
           </p>
           <p>
-            Previously, the client handled registrations via email and phone,
-            and stored enrollment data in Excel spreadsheets. Processing these
-            records required significant manual work and made it difficult to
-            track customer history, manage recurring services, and collect
-            payments efficiently.
+            Traditionally, preparing legal documents required direct interaction
+            with a lawyer, leading to higher costs and limited scalability. Laiw
+            addresses this by combining automation with legal oversight—
+            documents are generated using <b>OpenAI API</b> and optionally
+            reviewed or refined by legal professionals.
           </p>
           <p>The goal of this project was to create a system that:</p>
           <ul>
-            <li>centralizes customer and order data</li>
-            <li>automates payment collection</li>
-            <li>simplifies order management</li>
-            <li>enables tracking of student enrollments and services</li>
+            <li>enables scalable distribution of legal documents</li>
+            <li>automates document generation using AI</li>
+            <li>integrates e-commerce workflows for contract sales</li>
+            <li>supports legal review and editing processes</li>
+            <li>maintains context-aware document generation history</li>
           </ul>
-          <p>
-            The system allows staff to create and manage orders for families
-            enrolling children in courses or tutoring sessions, while customers
-            receive email notifications and can pay for their orders online.
-          </p>
-
-          <img src="../assets/AcademyPoint-2026-03-27_21-03.png" />
         </section>
 
         <section>
           <h3>Business Context</h3>
-          <p>The client runs an educational institution offering:</p>
+          <p>The startup operates in the legal-tech space, focusing on:</p>
           <ul>
-            <li>group courses</li>
-            <li>tutoring sessions</li>
-            <li>recurring educational services</li>
+            <li>standardized legal agreements for individuals</li>
+            <li>cost-efficient alternatives to traditional legal services</li>
+            <li>digital distribution of contracts via an online store</li>
           </ul>
           <p>
-            Each family may enroll multiple children into different courses. The
-            system supports managing families, students, and course enrollments
-            while maintaining full visibility into orders, payments, and service
-            fulfillment.
+            The business model is based on high-volume sales of legal templates
+            enhanced with AI-generated personalization. Each purchased document
+            is tailored to the customer’s input and optionally verified by a
+            lawyer.
           </p>
         </section>
 
         <section>
           <h3>Key Features</h3>
 
-          <h4>1. Automated Payment Collection</h4>
+          <h4>1. Automated Contract Generation</h4>
           <p>
-            The platform includes a payment automation system integrated with:
+            The system automatically generates legal documents immediately after
+            order completion.
           </p>
+          <p><b>Workflow:</b></p>
           <ul>
-            <li>Stripe</li>
-            <li>BLIK payments</li>
+            <li>customer selects a contract product</li>
+            <li>fills out a structured form with required legal data</li>
+            <li>completes payment</li>
+            <li>backend processes the order</li>
+            <li>contract is generated using <b>OpenAI API</b></li>
           </ul>
-          <p>
-            Customers receive an email containing their order and a payment
-            link. They can complete the payment independently without staff
-            intervention.
-          </p>
+
           <p><b>Key capabilities:</b></p>
           <ul>
-            <li>automated payment requests</li>
-            <li>payment status tracking</li>
-            <li>integration with Medusa order lifecycle</li>
-            <li>support for online payment methods commonly used in Poland</li>
+            <li>dynamic prompt generation based on product type</li>
+            <li>injection of user-provided data into contract templates</li>
+            <li>context-aware AI generation per document</li>
+            <li>instant contract creation after purchase</li>
           </ul>
 
-          <video class="preview" controls>
-            <source src="../assets/PaymentSystem.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-
-          <h4>2. Family Management</h4>
           <p>
-            A custom family management module was implemented to reflect the
-            real-world structure of the client’s customers.
+            Each product (contract type) has a predefined prompt template that
+            guides the AI in generating the appropriate document structure and
+            content.
           </p>
-          <ul>
-            <li>grouping multiple students under a single family</li>
-            <li>tracking order history for each family</li>
-            <li>creating new orders for existing families</li>
-            <li>scheduling future orders</li>
-            <li>automatic renewal of recurring services</li>
-          </ul>
 
-          <p style="margin-top: 30px">
-            Create family student and parent profiles to simplify order
-            management and billing.
-          </p>
-          <video class="preview" controls>
-            <source src="../assets/FamilyCreate.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-
-          <p style="margin-top: 30px">Edit family members</p>
-          <video class="preview" controls>
-            <source src="../assets/FamilyEdit.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-
-          <p style="margin-top: 30px">Schedule upcoming billing for a family</p>
-          <video class="preview" controls>
-            <source src="../assets/AddDraftOrder.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-
-          <p style="margin-top: 30px">Draft order renewal</p>
-          <video class="preview" controls>
-            <source src="../assets/DraftOrderTrigger.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-
-          <h4>3. Course and Student Management</h4>
-          <p>The system introduces domain logic for managing:</p>
-          <ul>
-            <li>students</li>
-            <li>course groups</li>
-            <li>enrollments</li>
-          </ul>
+          <h4>2. Document Output and Editing Pipeline</h4>
           <p>
-            Each student can be assigned to specific course groups, allowing
-            administrators to track whether the services delivered match the
-            ordered and paid services.
+            Generated contracts are produced in multiple formats to support both
+            automation and manual review.
+          </p>
+
+          <p><b>Formats:</b></p>
+          <ul>
+            <li>.docx (editable format)</li>
+            <li>.pdf (finalized document)</li>
+          </ul>
+
+          <p>
+            The system uses <b>LibreOffice</b> for document conversion,
+            enabling:
           </p>
           <ul>
-            <li>verification of enrollment vs purchased services</li>
-            <li>monitoring group capacity</li>
-            <li>managing student-course assignments</li>
+            <li>seamless transformation between formats</li>
+            <li>easy editing by legal staff</li>
+            <li>compatibility with standard legal workflows</li>
+          </ul>
+
+          <p>
+            Lawyers can review, adjust, and finalize documents before delivery
+            if required.
+          </p>
+
+          <video class="preview" controls>
+            <source src="../assets/LAiW_SampleOrder.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <p style="margin-top: 30px;">
+            The person responsible for preparing the document has the ability to
+            re-prompt it or manually upload a revised version.
+          </p>
+          <video class="preview" controls>
+            <source
+              src="../assets/LAiW_DocumentManualUpload.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+
+          <h4>3. Admin Dashboard and Document Lifecycle</h4>
+          <p>
+            The platform includes a management interface for handling contracts
+            and their lifecycle.
+          </p>
+
+          <p><b>Core functionalities:</b></p>
+          <ul>
+            <li>uploading new contract templates</li>
+            <li>editing and refining generated documents</li>
+            <li>managing product-specific prompts</li>
+            <li>tracking order-related document generation</li>
+          </ul>
+
+          <p>
+            Each contract instance is treated as a separate conversational
+            thread with AI, meaning:
+          </p>
+          <ul>
+            <li>the system preserves generation context</li>
+            <li>subsequent edits or regenerations are context-aware</li>
+            <li>the AI "understands" the history of the document</li>
+          </ul>
+
+          <p>
+            This enables iterative refinement rather than one-off generation.
+          </p>
+
+          <h4>4. E-commerce Integration</h4>
+          <p>Laiw operates as an online store for legal documents.</p>
+
+          <ul>
+            <li>product catalog of legal agreements</li>
+            <li>order processing and payment handling</li>
+            <li>automatic backend triggers after purchase</li>
             <li>
-              ensuring operational consistency between orders and course
-              participation
+              seamless connection between checkout and document generation
             </li>
           </ul>
-        </section>
 
-        <p style="margin-top: 30px">
-          AcademyPoint allows a quick overview of which student attends which
-          class groups, enabling the owner to efficiently verify whether course
-          billing aligns with the lists of participants assigned to each group.
-        </p>
-        <video class="preview" controls>
-          <source src="../assets/Attendance.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          <p>
+            The system ensures that every completed order results in an
+            immediately generated, personalized legal document.
+          </p>
+
+          <h4>5. AI Contract Builder (Standalone Tool)</h4>
+          <p>
+            In addition to predefined products, the platform offers a flexible
+            contract creation tool.
+          </p>
+
+          <ul>
+            <li>free-form contract generation using <b>OpenAI API</b></li>
+            <li>user-driven input without fixed templates</li>
+            <li>rapid prototyping of custom agreements</li>
+          </ul>
+
+          <p>
+            This feature extends the platform beyond structured products into a
+            general-purpose legal document generator.
+          </p>
+
+          <video class="preview" controls>
+            <source
+              src="../assets/LAiW_DocumentGenerator.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </section>
 
         <section>
           <h3>System Architecture</h3>
-          <p>
-            The solution is implemented as a custom extension to
-            <b>MedusaJS</b>, leveraging its modular architecture to introduce
-            domain-specific functionality.
-          </p>
-          <p><b>Core components include:</b></p>
+          <p>Laiw is built as a modular backend system integrating:</p>
           <ul>
-            <li>custom modules extending Medusa services</li>
-            <li>payment integrations</li>
-            <li>order lifecycle automation</li>
-            <li>domain entities for families, students, and course groups</li>
+            <li>AI generation via OpenAI API</li>
+            <li>document processing using LibreOffice</li>
+            <li>e-commerce order handling</li>
+            <li>custom domain logic for legal products and documents</li>
           </ul>
+
+          <p><b>Core components:</b></p>
+          <ul>
+            <li>order processing pipeline</li>
+            <li>prompt management system</li>
+            <li>document generation engine</li>
+            <li>admin dashboard</li>
+            <li>AI conversation context layer</li>
+          </ul>
+
           <p>
-            The backend acts as the operational hub for managing educational
-            services and customer payments.
+            The backend acts as the central orchestration layer connecting
+            payments, AI generation, and document management.
           </p>
         </section>
 
         <section>
           <h3>Benefits</h3>
           <ul>
-            <li>
-              reduced manual work previously required for Excel-based workflows
-            </li>
-            <li>centralized management of families, students, and orders</li>
-            <li>automated payment collection</li>
-            <li>improved visibility into customer history</li>
-            <li>reduced administrative overhead</li>
+            <li>significant cost reduction for end users</li>
+            <li>scalable legal document generation</li>
+            <li>automation of repetitive legal drafting tasks</li>
+            <li>streamlined workflow for legal review</li>
+            <li>centralized management of contracts and orders</li>
+            <li>improved turnaround time for document delivery</li>
           </ul>
         </section>
 
         <section>
           <h3>Future Improvements</h3>
           <ul>
-            <li>customer self-service portal</li>
-            <li>automated reminders for unpaid orders</li>
-            <li>attendance tracking for course sessions</li>
-            <li>reporting and analytics for enrollment trends</li>
+            <li>customer self-service panel for document access and edits</li>
+            <li>automated legal validation checks</li>
+            <li>versioning and audit trails for contracts</li>
+            <li>advanced prompt customization per user segment</li>
+            <li>analytics on document usage and demand</li>
+            <li>deeper human-in-the-loop review workflows</li>
           </ul>
         </section>
 
         <section>
           <h3>Client</h3>
           <p>
-            Developed for: <b>szkolaorlow.pl</b><br />
-            Educational services provider specializing in courses and tutoring
-            for students.
+            Developed for: <b>baitlaw.com</b><br />
+            Legal-tech initiative focused on scalable delivery of legal services
+            for individual clients.
           </p>
         </section>
       </section>
